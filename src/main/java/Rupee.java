@@ -1,13 +1,20 @@
 public class Rupee {
-    public int value;
-    public int serialNo;
+    public final int value;
 
-    public Rupee(int value, int serialNo) {
+    public Rupee(int value) {
         this.value = value;
-        this.serialNo = serialNo;
     }
 
-    public boolean compareRupee(Rupee rupee) {
-        return rupee == this;
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Rupee rupee = (Rupee) o;
+        return value == rupee.value;
     }
+
+    public Rupee add(Rupee rupee) {
+        int val = this.value + rupee.value;
+        return new Rupee(val);
+    }
+
 }

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RupeeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-18T06:07:11" hostname="Sudhiras-MacBook-Pro.local" time="0.018">
+<testsuite name="RupeeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-01-19T03:47:47" hostname="Sudhiras-MacBook-Pro.local" time="0.046">
   <properties/>
-  <testcase name="shouldReturnFalseForTwoDifferentValuedRupees()" classname="RupeeTest" time="0.018"/>
+  <testcase name="shouldReturnNotNull()" classname="RupeeTest" time="0.024"/>
+  <testcase name="shouldReturnTrueForTwoEqualValuedRupees()" classname="RupeeTest" time="0.003"/>
+  <testcase name="shouldReturnFalseForTwoDifferentValuedRupees()" classname="RupeeTest" time="0.004"/>
+  <testcase name="shouldAddRupees()" classname="RupeeTest" time="0.001"/>
+  <testcase name="shouldAddValuesOfRupees()" classname="RupeeTest" time="0.002"/>
+  <testcase name="shouldReturnNotSameForTwoDifferentRupees()" classname="RupeeTest" time="0.001"/>
+  <testcase name="shouldReturnNotEqualForDifferentObjects()" classname="RupeeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
