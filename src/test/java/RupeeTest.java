@@ -13,7 +13,6 @@ public class RupeeTest {
         assertNotSame(rupee1, rupee2);
     }
 
-
     @Test
     void shouldReturnTrueForTwoEqualValuedRupees() {
         Rupee rupee1 = new Rupee(10);
@@ -27,9 +26,9 @@ public class RupeeTest {
         Rupee rupee1 = new Rupee(10);
         Rupee rupee2 = new Rupee(5);
 
-
         assertNotEquals(rupee1, rupee2);
     }
+
     @Test
     void shouldAddRupeesAndReturnTrueIfEqualToGivenRupee(){
         Rupee rupee1 = new Rupee(3);
@@ -40,6 +39,15 @@ public class RupeeTest {
         assertEquals(newRupee,rupee);
     }
 
+    @Test
+    void shouldAddRupeesAndReturnFalseIfRupeeNotEqualToGivenRupee(){
+        Rupee rupee1 = new Rupee(5);
+        Rupee rupee2 = new Rupee(2);
+        Rupee rupee = new Rupee(10);
+
+        Rupee newRupee = rupee1.add(rupee2);
+        assertNotEquals(newRupee,rupee);
+    }
 
     @Test
     void shouldReturnNotEqualForDifferentObjects() {
